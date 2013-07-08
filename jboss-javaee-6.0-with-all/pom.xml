@@ -31,126 +31,112 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- JBoss distributes a complete set of Java EE 6 APIs including 
-                a Bill of Materials (BOM). A BOM specifies the versions of a "stack" (or 
-                a collection) of artifacts. -->
+           <!-- EAP Boms -->
             <dependency>
-                <groupId>org.jboss.bom</groupId>
-                <artifactId>
-                    jboss-javaee-6.0-with-deltaspike
-                </artifactId>
-                <version>${project.version}</version>
-                <scope>import</scope>
+                <groupId>org.jboss.bom.eap</groupId>
+                <artifactId>jboss-javaee-6.0-with-hibernate</artifactId>
+                <version>${jboss.bom.eap.version}</version>
                 <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.bom.eap</groupId>
+                <artifactId>jboss-javaee-6.0-with-hibernate3</artifactId>
+                <version>${jboss.bom.eap.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.bom.eap</groupId>
+                <artifactId>jboss-javaee-6.0-with-logging</artifactId>
+                <version>${jboss.bom.eap.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.bom.eap</groupId>
+                <artifactId>jboss-javaee-6.0-with-osgi</artifactId>
+                <version>${jboss.bom.eap.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>org.jboss.bom</groupId>
-                <artifactId>
-                    jboss-javaee-6.0-with-errai
-                </artifactId>
-                <version>${project.version}</version>
-                <scope>import</scope>
+                <artifactId>jboss-javaee-6.0-with-resteasy</artifactId>
+                <version>${jboss.bom.eap.version}</version>
                 <type>pom</type>
+                <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>org.jboss.bom</groupId>
-                <artifactId>
-                    jboss-javaee-6.0-with-hibernate
-                </artifactId>
-                <version>${project.version}</version>
-                <scope>import</scope>
+                <groupId>org.jboss.bom.eap</groupId>
+                <artifactId>jboss-javaee-6.0-with-security</artifactId>
+                <version>${jboss.bom.eap.version}</version>
                 <type>pom</type>
+                <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>org.jboss.bom</groupId>
-                <artifactId>
-                    jboss-javaee-6.0-with-hibernate3
-                </artifactId>
-                <version>${project.version}</version>
-                <scope>import</scope>
+                <groupId>org.jboss.bom.eap</groupId>
+                <artifactId>jboss-javaee-6.0-with-tools</artifactId>
+                <version>${jboss.bom.eap.version}</version>
                 <type>pom</type>
+                <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>org.jboss.bom</groupId>
-                <artifactId>
-                    jboss-javaee-6.0-with-infinispan
-                </artifactId>
-                <version>${project.version}</version>
-                <scope>import</scope>
+                <groupId>org.jboss.bom.eap</groupId>
+                <artifactId>jboss-javaee-6.0-with-transactions</artifactId>
+                <version>${jboss.bom.eap.version}</version>
                 <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            
+            <!-- WFK Boms -->
+            <dependency>
+                <groupId>org.jboss.bom.wfk</groupId>
+                <artifactId>jboss-javaee-6.0-with-deltaspike</artifactId>
+                <version>${jboss.bom.wfk.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>org.jboss.bom</groupId>
-                <artifactId>
-                    jboss-javaee-6.0-with-logging
-                </artifactId>
-                <version>${project.version}</version>
-                <scope>import</scope>
+                <groupId>org.jboss.bom.wfk</groupId>
+                <artifactId>jboss-javaee-6.0-with-errai</artifactId>
+                <version>${jboss.bom.wfk.version}</version>
                 <type>pom</type>
+                <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>org.jboss.bom</groupId>
-                <artifactId>
-                    jboss-javaee-6.0-with-osgi
-                </artifactId>
-                <version>${project.version}</version>
-                <scope>import</scope>
+                <groupId>org.jboss.bom.wfk</groupId>
+                <artifactId>jboss-javaee-6.0-with-richfaces</artifactId>
+                <version>${jboss.bom.wfk.version}</version>
                 <type>pom</type>
+                <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>org.jboss.bom</groupId>
-                <artifactId>
-                    jboss-javaee-6.0-with-resteasy
-                </artifactId>
-                <version>${project.version}</version>
-                <scope>import</scope>
+                <groupId>org.jboss.bom.wfk</groupId>
+                <artifactId>jboss-javaee-6.0-with-spring</artifactId>
+                <version>${jboss.bom.wfk.version}</version>
                 <type>pom</type>
+                <scope>import</scope>
             </dependency>
+            
+            <!-- JDG Bom -->
+            <dependency>
+                <groupId>org.jboss.bom.jdg</groupId>
+                <artifactId>jboss-javaee-6.0-with-infinispan</artifactId>
+                <version>${jboss.bom.jdg.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- BRMS Bom -->
             <dependency>
                 <groupId>org.jboss.bom</groupId>
-                <artifactId>
-                    jboss-javaee-6.0-with-richfaces
-                </artifactId>
-                <version>${project.version}</version>
-                <scope>import</scope>
+                <artifactId>jboss-javaee-6.0-with-drools</artifactId>
+                <version>${jboss.bom.brms.version}</version>
                 <type>pom</type>
-            </dependency>
-            <dependency>
-                <groupId>org.jboss.bom</groupId>
-                <artifactId>
-                    jboss-javaee-6.0-with-security
-                </artifactId>
-                <version>${project.version}</version>
                 <scope>import</scope>
-                <type>pom</type>
             </dependency>
-            <dependency>
-                <groupId>org.jboss.bom</groupId>
-                <artifactId>
-                    jboss-javaee-6.0-with-spring
-                </artifactId>
-                <version>${project.version}</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-            <dependency>
-                <groupId>org.jboss.bom</groupId>
-                <artifactId>
-                    jboss-javaee-6.0-with-tools
-                </artifactId>
-                <version>${project.version}</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-            <dependency>
-                <groupId>org.jboss.bom</groupId>
-                <artifactId>
-                    jboss-javaee-6.0-with-transactions
-                </artifactId>
-                <version>${project.version}</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
+
         </dependencies>
     </dependencyManagement>
 </project>
