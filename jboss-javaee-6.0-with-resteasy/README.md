@@ -14,7 +14,7 @@ To use the BOM, import into your dependency management:
                <groupId>org.jboss.bom.eap</groupId>
                <artifactId>jboss-javaee-6.0-with-resteasy</artifactId>
                <version>6.1.0-redhat-SNAPSHOT</version>
-               <type>pom</scope>
+               <type>pom</type>
                <scope>import</scope>
             </dependency>
         </dependencies>

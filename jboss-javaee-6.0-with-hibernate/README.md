@@ -12,12 +12,12 @@ To use the BOM, import into your dependency management:
 
     <dependencyManagement>
         <dependencies>
-	        <dependency>
-	          <groupId>org.jboss.bom.eap</groupId>
-               <artifactId>jboss-javaee-6.0-with-hibernate</artifactId>
-               <version>6.1.0-redhat-SNAPSHOT</version>
-               <type>pom</type>
-               <scope>import</scope>
+            <dependency>
+              <groupId>org.jboss.bom.eap</groupId>
+              <artifactId>jboss-javaee-6.0-with-hibernate</artifactId>
+              <version>6.1.0-redhat-SNAPSHOT</version>
+              <type>pom</type>
+              <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement> 
